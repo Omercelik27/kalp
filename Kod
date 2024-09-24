@@ -1,0 +1,32 @@
+from turtle import *
+import time
+writee = input("1. yazıyı girin:")
+writeee = input("2. yazıyı girin:")
+def draw_heart():
+    color('Red')
+    begin_fill()
+    pensize(5)
+    left(50)
+    forward(133)
+    circle(50, 200)
+    right(140)
+    circle(50, 200)
+    forward(133)
+    color('RED')
+    end_fill()
+    penup()  
+    goto(0, 100)
+    pendown() 
+    color("white")
+    write(writee, align="center", font=("Arial", 16, "bold"))
+
+
+    penup()  
+    goto(0, 50) 
+    pendown()  
+    color("white")
+    write(writeee, align="center", font=("Arial", 16, "bold"))
+    hideturtle()
+draw_heart()
+
+time.sleep(10)
